@@ -43,12 +43,14 @@ export default {
     async init () {
       try {
         this.newsTitleList = await getNewsTitleList()
+        if (this.newsTitleList.length === 0) return
         this.info = await getNewsList({ type: this.newsTitleList[0].type })
       } catch (err) {
         console.error(err);
       }
     },
     onTabsChange (index) {
+      if (this.newsTitleList.length <= index) return
       const type = this.newsTitleList[index].type
       getNewsList({ type }).then(res => {
         this.info = res
