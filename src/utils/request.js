@@ -6,7 +6,13 @@ const service = axios.create({
   withCredentials: false
 })
 
-service.interceptors.response.use(response => response.data)
+service.interceptors.response.use(response => {
+  if (response.data.code !== '2000') {
+    return Promise.reject(response.data)
+  } else {
+    return response.data.data
+  }
+})
 
 export default service
 

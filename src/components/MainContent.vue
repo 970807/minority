@@ -53,7 +53,7 @@ export default {
       if (this.newsTitleList.length <= index) return
       const type = this.newsTitleList[index].type
       getNewsList({ type }).then(res => {
-        this.info = res
+        this.info = res.data
       }).catch(err => {
         console.error(err);
       })

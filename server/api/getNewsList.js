@@ -10,5 +10,9 @@ module.exports = (req, res) => {
   if (result) {
     data = result.list
   }
-  res.end(JSON.stringify(data))
+  res.json({
+    code: '2000',
+    msg: '请求成功',
+    data
+  })
 }

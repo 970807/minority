@@ -1,36 +1,36 @@
 [
   {
-    "id": 0,
+    "id": 1,
     "title": "推荐",
     "type": 0
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "最热",
     "type": 1
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "应用推荐",
     "type": 2
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "生活方式",
     "type": 3
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "效率技巧",
     "type": 4
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "播客",
     "type": 5
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "视频",
     "type": 6
   }
