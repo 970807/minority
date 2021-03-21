@@ -1,3 +1,5 @@
+drop table if exists swiperlist;
+CREATE TABLE `swiperlist` (`id` int NOT NULL AUTO_INCREMENT,`imgUrl` varchar(255) COLLATE utf8_bin DEFAULT NULL,PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 insert into swiperlist values('1', 'https://ae01.alicdn.com/kf/U13f78878ecf84849a35d4f02da03badbJ.jpg');
 insert into swiperlist values('2', 'https://ae01.alicdn.com/kf/Ud54c0e4f189b49cfbd4803cafc6e7bb7p.jpg');
 insert into swiperlist values('3', 'https://ae01.alicdn.com/kf/U9ef51006c214468c84b64b63ae420db2B.jpg');

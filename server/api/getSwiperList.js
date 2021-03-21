@@ -1,6 +1,7 @@
 const db = require('../db')
 
 module.exports = (req, res) => {
+  if (req.method !== 'GET') return
   db.base('select * from swiperlist').then(results => {
     res.json({
       code: '2000',
